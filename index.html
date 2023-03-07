@@ -4,11 +4,65 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>веб бд 1</title>
+    <title>веб бд 3</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style3.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <noscript>Включите джаву в браузере пж</noscript>
-    <h1>Суздалова Милена Максимовна - Лабораторная работа № 1</h1>
-    <script src="js/lab2.js"></script>
+    <header>
+      <h1>
+        Пожалуйста, пройдите форму регистрации, чтобы я сдала 3 лабу по вебу!
+      </h1>
+      <button id="button" class="regbutt">Регистрация</button>
+      <div id="mymodal" class="modal">
+        <div class="modalform">
+          <h2>Форма регистрации</h2>
+          <br />
+          <form method="post" data-netlify="true" name="login" id="form">
+            <label
+              >Почта:
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="milicca070803@mail.ru"
+                required
+              />
+            </label>
+            <br />
+            <br />
+            <label>
+              Пароль:
+              <input
+                class="polefocus"
+                id="password"
+                type="password"
+                name="password"
+                placeholder="Придумайте пароль"
+                required
+                minlength="6"
+              />
+            </label>
+            <p id="error" class="err"></p>
+            <br />
+            <input
+              id="showpass"
+              class="regbutt"
+              type="button"
+              value="Показать пароль"
+            />
+            <br />
+            <input class="regbutt" type="submit" value="Отправить" />
+          </form>
+        </div>
+      </div>
+    </header>
+    <main></main>
+    <script src="js/lab3.js"></script>
   </body>
 </html>

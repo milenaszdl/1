@@ -1,0 +1,84 @@
+:root {
+  font-size: 62.5%;
+  --primary-color: #000;
+  --primary-color2: #ffffff;
+  --primary-color3: #939393;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+h1 {
+  font-size: 3.2rem;
+  text-align: center;
+}
+
+.regbutt {
+  width: auto;
+  height: auto;
+
+  display: block;
+  text-align: center;
+  padding: 1.3rem 3.9rem;
+  margin-right: auto;
+  margin-left: auto;
+
+  font-size: 1.5rem;
+  line-height: 1.2;
+  color: var(--primary-color2);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  text-decoration: none;
+
+  background: #000;
+  border-radius: 8.2rem;
+
+  white-space: nowrap;
+
+  box-shadow: 10px 5px #9e7bb5;
+}
+
+.modal {
+  display: none; /* Скрыто по умолчанию */
+  position: fixed; /* Оставаться на месте */
+  z-index: 1; /* Сидеть на вершине */
+  padding-top: 100px; /* Расположение коробки */
+  left: 0;
+  top: 0;
+  width: 100%; /* Полная ширина */
+  height: 100%; /* Полная высота */
+  overflow: auto; /* Включите прокрутку, если это необходимо */
+  background-color: rgb(0, 0, 0); /* Цвет запасной вариант  */
+  background-color: rgba(0, 0, 0, 0.4); /*Черный с непрозрачностью */
+}
+
+.modalform {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 5rem 5rem;
+  width: 50rem;
+  height: 25rem;
+  background-color: #b99ace;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8.2rem;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+label {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.err {
+  font-size: 2rem;
+  text-align: center;
+  color: #ffffff;
+}
